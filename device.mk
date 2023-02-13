@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/mojito-miuicamera/products/miuicamera.mk)
+
 # A/B
 # Inherit virtual_ab_ota product
 $(call inherit-product, \

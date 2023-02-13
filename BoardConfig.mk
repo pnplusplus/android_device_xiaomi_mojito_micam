@@ -237,3 +237,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from proprietary files
 include vendor/xiaomi/mojito/BoardConfigVendor.mk
+
+
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/mojito-miuicamera/products/board.mk
